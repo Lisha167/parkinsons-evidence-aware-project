@@ -1,0 +1,68 @@
+{
+  "random": {
+    "policy_name": "random",
+    "accuracy": 0.9967,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.22,
+    "avg_acquisition_cost": 0.381,
+    "avg_acquisition_burden": 0.361,
+    "avg_uncertainty_reduction_bits": 0.0001,
+    "uncertainty_reduction_per_cost": 0.0002,
+    "pct_cases_resolved_to_sufficient": 0.6067
+  },
+  "fixed_order": {
+    "policy_name": "fixed_order",
+    "accuracy": 0.9933,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.173,
+    "avg_acquisition_cost": 0.115,
+    "avg_acquisition_burden": 0.115,
+    "avg_uncertainty_reduction_bits": 0.0001,
+    "uncertainty_reduction_per_cost": 0.001,
+    "pct_cases_resolved_to_sufficient": 0.6233
+  },
+  "lowest_cost": {
+    "policy_name": "lowest_cost",
+    "accuracy": 0.9933,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.173,
+    "avg_acquisition_cost": 0.115,
+    "avg_acquisition_burden": 0.115,
+    "avg_uncertainty_reduction_bits": 0.0001,
+    "uncertainty_reduction_per_cost": 0.001,
+    "pct_cases_resolved_to_sufficient": 0.6233
+  },
+  "highest_info": {
+    "policy_name": "highest_info",
+    "accuracy": 0.9967,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.183,
+    "avg_acquisition_cost": 0.496,
+    "avg_acquisition_burden": 0.449,
+    "avg_uncertainty_reduction_bits": 0.0,
+    "uncertainty_reduction_per_cost": 0.0,
+    "pct_cases_resolved_to_sufficient": 0.62
+  },
+  "gap_heuristic": {
+    "policy_name": "gap_heuristic",
+    "accuracy": 0.9967,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.183,
+    "avg_acquisition_cost": 0.416,
+    "avg_acquisition_burden": 0.379,
+    "avg_uncertainty_reduction_bits": 0.0,
+    "uncertainty_reduction_per_cost": 0.0001,
+    "pct_cases_resolved_to_sufficient": 0.6233
+  },
+  "proposed": {
+    "policy_name": "proposed",
+    "accuracy": 0.9933,
+    "unsupported_decision_rate": 0.0,
+    "avg_assessments_used": 1.173,
+    "avg_acquisition_cost": 0.115,
+    "avg_acquisition_burden": 0.115,
+    "avg_uncertainty_reduction_bits": 0.0001,
+    "uncertainty_reduction_per_cost": 0.001,
+    "pct_cases_resolved_to_sufficient": 0.6233
+  }
+}

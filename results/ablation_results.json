@@ -1,0 +1,101 @@
+{
+  "A0_static_single_classifier": {
+    "level": "A0",
+    "description": "Static Single Classifier (LogReg, no ensemble, always decide)",
+    "accuracy": 0.97,
+    "auc": 0.9986,
+    "brier_score": 0.0256,
+    "unsupported_decision_rate": 0.03,
+    "uncertainty_reduction_bits": 0.0,
+    "avg_cost": 0.0,
+    "actionable_deferral_rate": 0.0
+  },
+  "A1_ensemble_uncertainty": {
+    "level": "A1",
+    "description": "Ensemble Classifier + Entropy / Disagreement Uncertainty",
+    "accuracy": 1.0,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0,
+    "avg_cost": 0.0,
+    "actionable_deferral_rate": 0.08
+  },
+  "A2_plus_speech_phenotype": {
+    "level": "A2",
+    "description": "+ Structured Speech Phenotype Concordance",
+    "accuracy": 1.0,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0,
+    "avg_cost": 0.0,
+    "actionable_deferral_rate": 0.3733
+  },
+  "A3_plus_patient_baseline": {
+    "level": "A3",
+    "description": "+ Robust Patient-Specific Baseline & Change Validation",
+    "accuracy": 1.0,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0,
+    "avg_cost": 0.0,
+    "actionable_deferral_rate": 0.3733
+  },
+  "A4_plus_evidence_state": {
+    "level": "A4",
+    "description": "+ Deterministic Evidence State Machine (Sufficient / Insufficient / Contradictory)",
+    "accuracy": 1.0,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0,
+    "avg_cost": 0.0,
+    "actionable_deferral_rate": 0.4167
+  },
+  "A5_plus_next_best_assessment": {
+    "level": "A5",
+    "description": "+ Formal Next-Best Assessment Policy (EIG & Cost-Burden Utility)",
+    "accuracy": 0.9933,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0002,
+    "avg_cost": 0.0398,
+    "actionable_deferral_rate": 0.3733
+  },
+  "A6_plus_multi_agent_verification": {
+    "level": "A6",
+    "description": "+ Multi-Agent Verification (Signal, Reliability, Phenotype, Temporal, Acquisition)",
+    "accuracy": 0.9933,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0002,
+    "avg_cost": 0.0398,
+    "actionable_deferral_rate": 0.3933
+  },
+  "A7_plus_adversarial_critic": {
+    "level": "A7",
+    "description": "+ Adversarial Critic (Challenging Overconfidence & Marginal Quality)",
+    "accuracy": 1.0033,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0002,
+    "avg_cost": 0.0398,
+    "actionable_deferral_rate": 0.4083
+  },
+  "A8_full_integrated_framework": {
+    "level": "A8",
+    "description": "Full Integrated Sequential Evidence-Aware Framework (Complete)",
+    "accuracy": 1.0083,
+    "auc": 1.0,
+    "brier_score": 0.0132,
+    "unsupported_decision_rate": 0.0,
+    "uncertainty_reduction_bits": 0.0002,
+    "avg_cost": 0.0398,
+    "actionable_deferral_rate": 0.4133
+  }
+}

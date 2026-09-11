@@ -1,0 +1,13 @@
+{
+  "n_visits": 300,
+  "decision_state_distribution": {
+    "sufficient": 0.5833,
+    "contradictory": 0.33,
+    "insufficient": 0.0867
+  },
+  "unsupported_decision_rate_framework": 0.0,
+  "unsupported_decision_rate_static_always_decide": 0.0033,
+  "avg_acquisition_cost_across_dataset": 0.0208,
+  "avg_acquisition_burden_across_dataset": 0.0208,
+  "pct_cases_requiring_more_evidence": 0.4167
+}

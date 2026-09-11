@@ -1,0 +1,53 @@
+# Dataset Configuration for Parkinson's Voice Assessment
+# Defines registry paths, roles, and initial statuses
+
+datasets:
+  synthetic:
+    name: "Synthetic Longitudinal Parkinson's Voice Cohort"
+    source_url: "local://data/generate_synthetic_data.py"
+    research_role: "controlled_experiment"
+    raw_path: "data"
+    processed_path: "data"
+    status: "ready"
+    has_longitudinal_data: true
+    has_updrs: true
+
+  uci_parkinsons_detection:
+    name: "UCI Parkinson's Disease Detection"
+    source_url: "https://archive.ics.uci.edu/dataset/174/parkinsons"
+    research_role: "screening"
+    raw_path: "data/raw/uci_parkinsons_detection"
+    processed_path: "data/processed/uci_parkinsons_detection"
+    status: "not_downloaded"
+    has_longitudinal_data: false
+    has_updrs: false
+
+  uci_parkinsons_telemonitoring:
+    name: "UCI Parkinson's Telemonitoring"
+    source_url: "https://archive.ics.uci.edu/dataset/189/parkinson"
+    research_role: "longitudinal_change_detection"
+    raw_path: "data/raw/uci_parkinsons_telemonitoring"
+    processed_path: "data/processed/uci_parkinsons_telemonitoring"
+    status: "not_downloaded"
+    has_longitudinal_data: true
+    has_updrs: true
+
+  uci_parkinsons_multiple_speech:
+    name: "UCI Parkinson's Speech with Multiple Types of Sound Recordings"
+    source_url: "https://archive.ics.uci.edu/dataset/301/parkinson+speech+dataset+with+multiple+types+of+sound+recordings"
+    research_role: "sequential_speech_assessment"
+    raw_path: "data/raw/uci_parkinsons_multiple_speech"
+    processed_path: "data/processed/uci_parkinsons_multiple_speech"
+    status: "not_downloaded"
+    has_longitudinal_data: false
+    has_updrs: true
+
+  uci_parkinsons_replicated:
+    name: "UCI Parkinson Dataset with Replicated Acoustic Features"
+    source_url: "https://archive.ics.uci.edu/dataset/489/parkinson+dataset+with+replicated+acoustic+features"
+    research_role: "within_subject_variability"
+    raw_path: "data/raw/uci_parkinsons_replicated"
+    processed_path: "data/processed/uci_parkinsons_replicated"
+    status: "not_downloaded"
+    has_longitudinal_data: false
+    has_updrs: false

@@ -1,0 +1,60 @@
+Training ensemble (patient-level split) for evaluation...
+
+[1] STATIC CLASSIFIER: Discrimination & Calibration
+{
+  "auc": 1.0,
+  "brier_score": 0.003689848277901648,
+  "expected_calibration_error": 0.03534304818279291
+}
+
+[2] UNCERTAINTY-AWARE BASELINE: Selective risk / risk-coverage
+ coverage  selective_risk  n
+      0.1             0.0  7
+      0.2             0.0 13
+      0.3             0.0 20
+      0.4             0.0 26
+      0.5             0.0 33
+      0.6             0.0 40
+      0.7             0.0 46
+      0.8             0.0 53
+      0.9             0.0 59
+      1.0             0.0 66
+
+[3] EVIDENCE-AWARE FRAMEWORK: decision states, unsupported-decision rate, acquisition cost/burden
+{
+  "n_visits": 258,
+  "decision_state_distribution": {
+    "sufficient": 0.6472868217054264,
+    "contradictory": 0.32558139534883723,
+    "insufficient": 0.027131782945736434
+  },
+  "unsupported_decision_rate_framework(on 'sufficient' cases only)": 0.0,
+  "unsupported_decision_rate_static_always_decide": 0.0,
+  "avg_acquisition_cost_when_triggered": 0.09224806201550388,
+  "avg_acquisition_burden_when_triggered": 0.13643410852713178,
+  "pct_cases_requiring_more_evidence": 0.35271317829457366
+}
+
+[4] PATIENT-SPECIFIC CHANGE DETECTION vs. naive population threshold (ablation)
+{
+  "patient_specific_baseline": {
+    "precision": 0.04411764705882353,
+    "recall": 0.8571428571428571,
+    "f1": 0.08391608391608392,
+    "tp": 6,
+    "fp": 130,
+    "fn": 1,
+    "tn": 71
+  },
+  "naive_population_threshold": {
+    "precision": 0.13157894736842105,
+    "recall": 0.7142857142857143,
+    "f1": 0.2222222222222222,
+    "tp": 5,
+    "fp": 33,
+    "fn": 2,
+    "tn": 168
+  }
+}
+
+Full evaluation report saved to: /home/claude/parkinsons_project/outputs/evaluation_report.json
